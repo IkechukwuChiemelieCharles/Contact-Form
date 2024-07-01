@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./Card";
+import Writeup from "./Writeup";
+import Skills from "./Skills";
+import Form from "./Form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-red w-96 h-96">
+      <Card img="funghi.jpg" />
+      <Writeup />
+
+      <div className="container mx-auto">
+        <h1 className="text-2xl font-bold text-center my-8">My Form</h1>
+        <Form />
+      </div>
     </div>
   );
 }
